@@ -60,3 +60,10 @@ has_length <- function(x, len)
 #' @importFrom checkmate assertCount
 #' @keywords internal
 length_differs <- negate(has_length)
+
+
+#' @describeIn length_tools returns the range 1:nrow(x)
+seq_rows <- function(x) seq_len(nrow(x))
+
+#' @describeIn length_tools returns the range 1:ncol(x)
+seq_cols <- function(x) seq_len(ncol(x))
